@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/7c992a4c91.js" crossorigin="anonymous"></script>
+
+    <script>
+        function onSubmitForm() {
+            alert("Submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Portfolio.html"><i class="fas fa-home" ></i></a>
+        <a href="about.html"><i class="fas fa-solid fa-user"></i></a>
+        <a href="skills.html"><i class="fas fa-solid fa-toolbox"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope" ></i></a>
+    </div>
+
+       <div class="contactmain">
+            <div><h1 class="contactheader">CONTACT ME</h1></div>
+            <div>
+                <form action="/submit_form" method="POST" class="msg" onsubmit="onSubmitForm()">
+                    <label for="name" id="namelabel">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email" id="emaillabel">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="message" id="messagelabel">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
